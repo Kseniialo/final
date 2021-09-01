@@ -1,0 +1,99 @@
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'TT Norms';
+}
+@font-face {
+    font-family: 'TT Norms';
+    src: local('TT Norms Medium'), local('TT-Norms-Medium'),
+        url('../fonts/TTNorms-Medium.woff2') format('woff2'),
+        url('../fonts/TTNorms-Medium.woff') format('woff'),
+        url('../fonts/TTNorms-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TT Norms';
+    src: local('TT Norms Bold'), local('TT-Norms-Bold'),
+        url('../fonts/TTNorms-Bold.woff2') format('woff2'),
+        url('../fonts/TTNorms-Bold.woff') format('woff'),
+        url('../fonts/TTNorms-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TT Norms';
+    src: local('TT Norms Regular'), local('TT-Norms-Regular'),
+        url('../fonts/TTNorms-Regular.woff2') format('woff2'),
+        url('../fonts/TTNorms-Regular.woff') format('woff'),
+        url('../fonts/TTNorms-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+.wrap-header{
+    height: 800px;
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%); ;
+}
+.font-normal-bold{
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+}
+header{
+    position: fixed;
+    height: 80px;
+    align-items: center;
+    background:linear-gradient(42.01deg, #323264 8.33%, #323264 6.39%, #7A425E 83.53%);
+    
+}
+.btn-lang{
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    justify-content: center;
+    width: 29px;
+    height: 24px;
+}
+.btn-lang:active{
+    width: 29px;
+    height: 24px;
+    background: #F0145A;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    justify-content: center;
+}
+.nbar{
+    a{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        color: #FFFFFF;
+        margin-left: 10px;
+    }
+    a::before{
+        content: '\25CF';
+        color:#FFF;
+        margin-right: 10px;
+        opacity: 0.9;
+    }
+}
+.section-1{
+    background-image: url('../img/main/Pattern\ Splash.png');
+.-p1{
+    background-image: url('../img/main/Symbol\ Long\ leg.png');
+}
+}
