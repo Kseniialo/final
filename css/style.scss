@@ -34,8 +34,9 @@ body{
     font-style: normal;
   }
 .wrap-header{
-    height: 800px;
+    height: 674px;
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%); ;
+    
 }
 .font-normal-bold{
     font-family: "TT Norms";
@@ -46,54 +47,211 @@ header{
     position: fixed;
     height: 80px;
     align-items: center;
-    background:linear-gradient(42.01deg, #323264 8.33%, #323264 6.39%, #7A425E 83.53%);
-    
-}
-.btn-lang{
-    border: none;
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    justify-content: center;
-    width: 29px;
-    height: 24px;
-}
-.btn-lang:active{
-    width: 29px;
-    height: 24px;
-    background: #F0145A;
-    border-radius: 8px;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    justify-content: center;
-}
-.nbar{
-    a{
-        text-decoration: none;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: right;
+    background:linear-gradient(42.01deg, #323264 16.33%, #323264 22.39%, #7A425E 80.53%);
+    z-index: 2000;
+        .btn-lang{
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
         color: #FFFFFF;
-        margin-left: 10px;
+        justify-content: center;
+        width: 29px;
+        height: 24px;
     }
-    a::before{
-        content: '\25CF';
-        color:#FFF;
-        margin-right: 10px;
-        opacity: 0.9;
+    .btn-lang:focus  {
+        width: 29px;
+        height: 24px;
+        background: #F0145A;
+        border-radius: 8px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        justify-content: center;
+    }
+    
+    .nbar{
+        a{
+            text-decoration: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: right;
+            color: #FFFFFF;
+            margin-left: 10px;
+        }
+        a::before{
+            content: '\25CF';
+            color:#FFF;
+            margin-right: 10px;
+            opacity: 0.9;
+        }
     }
 }
+
 .section-1{
-    background-image: url('../img/main/Pattern\ Splash.png');
-.-p1{
-    background-image: url('../img/main/Symbol\ Long\ leg.png');
+    height: 674px;
+    padding-top: 80px ;
+    background-image: url('../img/main/PatternSplash.png') no-repeat;
+        &-p1{
+            height: 674px;
+            background-image: url('../img/main/Symbol\ Long\ leg.png') no-repeat;
+            h2{
+                font-size: 38px;
+                line-height: 45px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+        &-p2{
+            z-index: 100;
+            height: 200px;
+            background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);;
+            a{
+                margin-bottom: 20px;
+            }
+        }
 }
+.section-2{
+    &-p1{
+        z-index: 200;
+        height: 1374px;
+        background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+        border-radius: 0px 0px 12px 12px;
+    }
+    &-p2{
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        height: 10px;
+        width: 98%;
+    }
+    &-p3{
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+        height: 10px;
+        width: 96%;
+        
+    }
+
+.section-2-p1 .nav-link {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: right;
+    color: #B3B3BA;
+    background-color: transparent !important;
+    border-radius: 0 0 0 0 !important;
+    border-right: 4px solid #E6E6F0;
+}
+.section-2-p1 .nav-link:focus {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: right;
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 0 0 0 0 !important;
+    border-right:  4px solid #F0145A;
+
+}
+.section-2-p1 .nav-pills .active {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: right;
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 0 0 0 0 !important;
+    border-right:  4px solid #F0145A;
+
+}
+.tab-content{
+    width: 600px;
+    height: 312px;
+    }
+.section-2-p1 .tab-pane{
+    margin-top: 30px;
+    h2{
+        font-size: 32px;
+        line-height: 38px;
+        color: #FFFFFF;
+    }
+    p{
+        font-size: 21px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-align: justify;
+    }
+}
+.section-2-p1{
+    padding-top: 80px;
+    &-gridtitle{
+        margin-top: 100px;
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+        // a:after{
+        //     content: url(' \203A');
+        //     }
+    h2{
+        font-size: 42px;
+        line-height: 50px;
+        background-color: #2AA5A0;
+        background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+    }
+    &-grid{
+        margin-top: 68px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 40px;
+            &-item{
+            height: 320px;
+            text-decoration: none; 
+                h4{
+                    margin-top: 20px;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #24A3FF;
+                }
+                p{
+                    margin-top: 15px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                }
+
+            }
+        
+    }
+}   
+}
+
+.section-3{
+   .carousel-indicators{
+       margin-bottom: -30px;
+        button{
+                background-color: rgba(36, 163, 255, 1);
+            }
+
+   } 
+  .carousel-item{
+      height: 600px;
+      background-color: yellowgreen;
+  }  
 }

@@ -20,7 +20,11 @@ module.exports = {
       options: {
          name: '[path][name].[ext]'
       }
-      }
+      },
+      {
+         test: /\.png$/,
+         use: 'url-loader'
+       }
    ]
    },
    plugins: [
