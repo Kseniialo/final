@@ -15,16 +15,12 @@ module.exports = {
             'sass-loader',
          ]
       },
-      {test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
-      loader: 'file-loader',
-      options: {
-         name: '[path][name].[ext]'
-      }
-      },
-      {
-         test: /\.png$/,
-         use: 'url-loader'
-       }
+      // {test: /\.(svg|ttf|eot|woff|woff2)$/,
+      // loader: 'file-loader',
+      // options: {
+      //    name: '[path][name].[ext]'
+      // }
+      // }
    ]
    },
    plugins: [
