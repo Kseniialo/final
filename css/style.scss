@@ -41,6 +41,9 @@ body{
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%); ;
     
 }
+.display-none{
+    display: none;
+}
 .font-normal-bold{
     font-family: "TT Norms";
     font-style: normal;
@@ -132,9 +135,12 @@ header{
 .section-2{
     &-p1{
         z-index: 200;
-        height: 1374px;
         background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
         border-radius: 0px 0px 12px 12px;
+        .tab-pane{
+            h1{display: none;}
+            
+        }
     }
     &-p2{
         background: #CACADB;
@@ -187,7 +193,7 @@ header{
 
 }
 .tab-content{
-    height: 312px;
+    // height: 312px;
     }
 .section-2-p1 .tab-pane{
     margin-top: 30px;
@@ -216,9 +222,7 @@ header{
             color: #FFFFFF;
             opacity: 0.5;
         }
-        // a:after{
-        //     content: url(' \203A');
-        //     }
+        
     h2{
         font-size: 42px;
         font-weight: bold;
@@ -236,7 +240,7 @@ header{
         row-gap: 50px;
         column-gap: 40px;
             &-item{
-            height: 320px;
+            // height: 320px;
             text-decoration: none; 
                 h4{
                     margin-top: 20px;
@@ -268,7 +272,9 @@ header{
 
    } 
   .carousel-item{
-      
+    .card-img-top {
+        width: fit-content;
+    }
       .card{
           margin-top: 40px;
           border: none;
@@ -654,6 +660,7 @@ header{
             flex-direction: column-reverse;
             .nav-pills{
                 flex-direction: row !important;
+                align-self: center;
                 .active{
                     border: none !important;
                     border-radius: 50% !important;
@@ -674,6 +681,7 @@ header{
                     width: 16px !important;
                     padding: 0 !important;
                     border-radius: 50% !important;
+                    margin-left: 14px;
                 }
                
                 .nav-link:focus {
@@ -687,10 +695,95 @@ header{
                     border-radius: 50%!important;
                 }
             }
+            .tab-pane{
+                h1{
+                    display: block;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    background-color: #2AA5A0;
+                    background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        .section-2-p1-grid {
+            grid-template-columns: 1fr;
+            row-gap: 40px;}
+    }
+    .section-3{
+        .card{
+            flex-direction: column-reverse !important;
+           .display-none {
+                    display: flex;
+                }
+                .img-wrap{
+                overflow: hidden;
+                border-radius: 50%;
+                width: 60px;
+                
+                img{
+                        height: 60px;
+                        width: 60px;
+                    }
+        } 
+            
+            &-body{
+              
+              h3{
+                font-size: 32px;
+                line-height: 38px;
+                }
+              .media-img-wrap{
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+              }
+              .media-text-wrap{
+                  margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+              }
+            }
         }
     }
-}
+    .section-4{
+        .section-4-grid-row1 {
+            grid-template-columns: 1fr;
+            gap: 2px;
+        }
+        .section-4-grid-row2 {
+            grid-template-columns: 1fr;
+            gap: 2px;
+        }
 
+    }
+    .section-5{
+        .section-5-grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 1fr;
+                img{
+                    width: min-content;
+                }
+        }
+        
+    }
+}
+@media screen and (max-width: 576px){
+    .section-5{
+        .section-5-grid {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 1fr;
+                img{
+                    width: min-content;
+                }
+        }
+        
+    }
+}
 /* страница О НАС */
 .header-white{
     position: fixed;
