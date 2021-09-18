@@ -60,13 +60,23 @@
 
     <section class="empty-sect"></section>
    <section class="publications-sect1">
-        <div class="container d-flex flex-column align-items-center">
-            <div class="wrap-check d-flex">
+        <div class="publications-sect1-btn container d-flex flex-column align-items-center">
+            <!-- <div class="wrap-check d-flex">
                 <input type="checkbox" id="check-publications"></input>
                 <label for="check-publications" class="publications-sect1-btn"></label>
-            </div>
-        </div>
-        <div class="container">
+            </div> -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">новини</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">компанія</button>
+                </li>
+                
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container">
             <div class="publications-sect1-grid d-grid">
                 <div class="publications-sect1-grid-col1 ">
                     <a href="../pages/publications-next.html" class="card" >
@@ -196,6 +206,11 @@
             </div>
             
         </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            </div>
+        </div>
+        
         <div class="container border-container d-flex flex-column align-items-center">
             <input class="" type="button" value="Ще публікації">
         </div>

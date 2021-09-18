@@ -6,6 +6,7 @@
 body{
     font-family: 'TT Norms';
 }
+
 @font-face {
     font-family: 'TT Norms';
     src: local('TT Norms Medium'), local('TT-Norms-Medium'),
@@ -2164,7 +2165,45 @@ header{
     .publications-sect1{
         background: #F5F5FA;
         border-radius: 12px 12px 0px 0px;
-              
+        .publications-sect1-btn{
+            .nav-tabs{
+                background: #E6E6F0;
+                border-radius: 12px;
+                padding: 2px;
+                height: 40px;
+                width: 260px;
+                border: none;
+                margin: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+             
+                .nav-link{
+                    font-size: 18px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #323264;
+                    height: 36px;
+                    width: 127px;
+                    background: transparent;
+                    border: none;
+                    margin-bottom: 2px;
+                }
+                .active{
+                    font-size: 18px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #323264;
+                    height: 36px;
+                    width: 127px;
+                    background: #FFFFFF;
+                    border-radius: 10px;
+                    border: none;
+                    margin-bottom: 2px;
+                }
+            }
+        }     
         .publications-sect1-grid{
         grid-template-columns: repeat(3, 31%);
         gap: 3.5%;
@@ -2232,49 +2271,7 @@ header{
             color: #FFFFFF;
             margin-top: 40px;
         }
-        .wrap-check{
-            margin: 40px;
-            input{
-                display: none;
-            }
-                .publications-sect1-btn{
-                    background: #E6E6F0;
-                    border-radius: 12px;
-                    padding: 2px;
-                    height: 40px;
-                    width: 260px;
-                    
-                      }
-                      .publications-sect1-btn::before{
-                        content: 'новини';
-                        font-size: 18px;
-                        line-height: 21px;
-                        text-align: center;
-                        color: #323264;
-                        display: block;
-                        padding-top: 7px;
-                        height: 36px;
-                        width: 127px;
-                        background: #FFFFFF;
-                        border-radius: 10px;
-                                               
-                    }
-            input[type=checkbox]:checked ~ .publications-sect1-btn{
-                display: flex;
-                justify-content: flex-end; 
-                transition: .5s;  
-                   }
-            input[type=checkbox]:checked ~ .publications-sect1-btn::before{
-                background-color: #FFFFFF;
-                content: 'компанія';
-                padding-top: 7px;
-                font-size: 18px;
-                line-height: 21px;
-                text-align: center;
-                color: #323264;
-                    
-            }
-        }
+        
         .border-container{
             padding-bottom: 40px;
             border-bottom: 4px solid #E6E6F0;
